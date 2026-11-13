@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rama's Shop — Everyday Finds</title><link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+<header class="topbar"><a class="brand" href="/">NORTH <span>&</span> LANE</a><nav><a href="#shop">Shop</a><a href="#about">About</a><a href="/admin.html">Admin</a></nav><button id="cartToggle" class="cart-button">Bag <span id="cartCount">0</span></button></header>
+<section class="hero"><div class="hero-copy"><p class="eyebrow">CURATED EVERYDAY FINDS</p><h1>Little things.<br><em>Better living.</em></h1><p>Fresh finds, fun details and everyday favorites from around the world.</p><a class="button" href="#shop">Explore collection</a></div><div class="hero-art"><div class="hero-note">RAMA'S<br>SHOP</div></div></section>
+<section class="intro" id="about"><p class="eyebrow">A MORE CONSIDERED WAY TO SHOP</p><h2>Find your next favorite thing.</h2><p>Explore playful picks for your home, travels and everyday life.</p></section>
+<main id="shop" class="shop"><div class="section-head"><div><p class="eyebrow">THE COLLECTION</p><h2>Shop all products</h2></div><select id="categoryFilter"><option value="">All categories</option></select></div><div id="products" class="product-grid"><p>Loading products…</p></div></main>
+<aside id="cartPanel" class="cart-panel" aria-hidden="true"><div class="cart-head"><h2>Your bag</h2><button id="closeCart" class="icon-button">×</button></div><div id="cartItems"></div><div class="cart-bottom"><div class="total-line"><span>Subtotal</span><strong id="cartTotal">$0.00</strong></div><button id="checkoutButton" class="button full">Continue to checkout</button><p class="fine">Shipping and taxes are confirmed at checkout.</p></div></aside>
+<div id="overlay" class="overlay"></div>
+<section id="checkout" class="checkout hidden"><div class="checkout-card"><button id="backToShop" class="text-button">← Back to shop</button><p class="eyebrow">SECURE CHECKOUT</p><h2>Where should we send it?</h2><form id="checkoutForm"><div class="form-grid"><label>Full name<input name="name" required autocomplete="name"></label><label>Email<input name="email" type="email" required autocomplete="email"></label><label>Phone<input name="phone" required autocomplete="tel"></label><label>Country<input name="country" required autocomplete="country-name"></label><label class="wide">Street address<input name="address" required autocomplete="street-address"></label><label>City<input name="city" required autocomplete="address-level2"></label><label>Postal code<input name="postalCode" required autocomplete="postal-code"></label></div><p class="fine">Your address is used only to fulfil and deliver your order. Payment is processed by the payment provider.</p><button class="button full" type="submit">Continue to secure payment</button><p id="checkoutError" class="error"></p></form></div></section>
+<footer><a class="brand light" href="/">NORTH <span>&</span> LANE</a><p>Fresh finds for everyday life — wherever you are.</p><p class="fine">© 2026 Rama's Shop. Worldwide store concept. Shipping availability and delivery times depend on each product and destination.</p></footer>
+<script src="/store.js"></script>
+</body></html>
